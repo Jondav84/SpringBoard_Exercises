@@ -1,0 +1,55 @@
+/** @format */
+
+//quick question 1:
+// What does the following code return?
+new Set([1, 1, 2, 2, 3, 4]);
+/*********
+Answer:
+ * [1,2,3,4]
+ ***********/
+
+//quick question 2:
+// What does the following code return?
+[...new Set("referee")].join("");
+/*********
+Answer:
+ * "ref"
+ ***********/
+
+//quick question 3:
+// What does the Map m look like after running the following code?
+let m = new Map();
+m.set([1, 2, 3], true);
+m.set([1, 2, 3], false);
+/*********
+Answer:
+ * 0: {array(3) => true}
+   1: {array(3) => false}
+ ***********/
+
+//hasDuplicate:
+// Write a function that takes in an array and returns true or false if that array
+// contains a duplicate:
+const hasDuplicate = (arr) => new Set(arr).size !== arr.length;
+
+//vowelCount:
+//  Write a function called vowelCount which accepts a string and returns a Map
+//  where the keys are numbers and the values are the count of the vowel in the string:
+function isVowel(char) {
+  return "aeiou".includes(char);
+}
+
+function vowelCount(str) {
+  const vowelMap = new Map();
+  for (let char of str) {
+    let lowerCaseChar = char.toLowerCase();
+    if (isVowel(lowerCaseChar)) {
+      if (vowelMap.has(lowerCaseChar)) {
+        vowelMap.set(lowerCaseChar, vowelMap.get(lowerCaseChar) + 1);
+      } else {
+        vowelMap.set(lowerCaseChar, 1);
+      }
+    }
+  }
+  return vowelMap;
+}
