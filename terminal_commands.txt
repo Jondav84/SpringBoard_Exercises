@@ -1,0 +1,54 @@
+Terminal commands:
+
+Part 1:
+1. mkdir first
+
+2. cd first
+
+3. touch person.txt
+
+4. mv person.txt another.txt
+
+5. cp another.txt copy.txt
+
+6. rm copy.txt
+
+7. cp -r first second
+
+8. rm -rf second
+
+
+Part 2:
+1. Displays the user manual of any command
+   The up and down arrows to scroll and q exit the manual
+
+2. -a, --all
+              do not ignore entries starting with .
+   -l     use a long listing format
+
+3. ‘CTRL’ + ‘left-arrow’
+   ‘CTRL’ + ‘right-arrow’
+
+4.  ‘END’
+    For me that is ‘FN’ + ‘right-arrow’
+
+5.  ‘HOME’
+    For me that is ‘FN’ + ‘left-arrow’
+
+6.  Before the the cursor ‘CRTL’ + ‘backspace’
+    After the cursor ‘CTRL’ + ‘DELETE’
+
+7.  The terminal is the window or interface that allows you to access the shell, and the shell is the program that interprets and executes the commands you type in the terminal.
+
+8.  A complete path that specifies the exact location of a file or directory, starts with /
+
+9.  A path that specifies the location of a file or directory relative to the current working directory.  Uses ( . ) to represent the current working directory.  Uses ( .. ) to represent the parent directory.
+
+10. A modifier to alter a command's behavior starts with( - ).
+    ls(command) -l(flag) to display all the files and directories in long format
+    cp(command) -r(flag) to copy a directory with all of its contents included
+    rm(command) -rf(flags) to remove a directory that has content 
+
+11. The r will go through and remove directories and files within the directory to be removed.
+    While the f will force the removal without prompting for confirmation.
+
