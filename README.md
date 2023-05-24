@@ -1221,3 +1221,25 @@ Create a class for a Garage. It should have a property called **_vehicles_** w
 A garage should also have an **_add_** method, which attempts to add a vehicle to the array of vehicles. However, if you try to add something which is *not* a vehicle, the garage should return the message “Only vehicles are allowed in here!”. Also, if the garage is at capacity, it should say “Sorry, we’re full.”
 
 _AnswerKey_: car-class.js
+
+## 29. Bootstrap Exercises:
+
+For this assignment you should **only** use Twitter Bootstrap, Font Awesome, and [Lorem Pixel](http://lorempixel.com/) for placeholder images.
+
+**Do not write any custom CSS.**
+
+### **Step One**
+
+Write the necessary code to make your page look just like this one:
+
+https://lessons.springboard.com/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe3f84e91-d58f-4148-b77a-1959ea25359d%2FUntitled.png?id=1a63af27-919c-48e5-8d63-00a23bc5ff52&table=block&spaceId=163f1722-85e9-4a3c-adba-457a91094f00&width=2000&userId=&cache=v2
+
+_AnswerKey_: Bootstrap_step1.html
+
+### **Step Two**
+
+Write the necessary HTML to make your page look just like this one:
+
+https://lessons.springboard.com/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F528d33ba-b017-47f3-b99f-1f945f0a2bf5%2FUntitled.png?id=a843284e-7e26-4dab-919a-3ff0051ab367&table=block&spaceId=163f1722-85e9-4a3c-adba-457a91094f00&width=2000&userId=&cache=v2
+
+_AnswerKey_: Bootstrap_step2.html

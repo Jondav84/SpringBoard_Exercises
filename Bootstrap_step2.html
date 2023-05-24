@@ -1,0 +1,268 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-KqW+g4R/Jax8+VjB0Sv8ZijfrF61OebsU1+Jxz8bySjoc6m9vkr+vLKOZLYwwy/mqyRnnJkkRapHV5pjX+0Gzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a href="#" class="navbar-brand">LOGO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#content"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="content">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Messages <span class="badge badge-success">12</span>
+            </a>
+          </li>
+          <!-- Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Table</a>
+              <a class="dropdown-item" href="#">Container</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://www.springboard.com"
+                >Learn More!</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1 class="my-4">Dashboard:</h1>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Team</th>
+            <th>All Star</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Steph</td>
+            <td>Warriors</td>
+            <td>Yes</td>
+            <td>
+              <a href="#" class="btn btn-sm btn-danger">
+                <i class="fas fa-trash"></i>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Lebron</td>
+            <td>Cavaliers</td>
+            <td>Yes</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-danger"
+                data-toggle="modal"
+                data-target="#confirmationModal"
+              >
+                <i class="fas fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Dwyane</td>
+            <td>Heat</td>
+            <td>Yes</td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-danger"
+                data-toggle="modal"
+                data-target="#confirmationModal"
+              >
+                <i class="fas fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Kobe</td>
+            <td>Lakers</td>
+            <td>Yes<span class="badge badge-warning">last</span></td>
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-danger"
+                data-toggle="modal"
+                data-target="#confirmationModal"
+              >
+                <i class="fas fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Isaiah</td>
+            <td>Celtis</td>
+            <td>Yes<span class="badge badge-success">first</span></td>
+            <
+            <td>
+              <button
+                type="button"
+                class="btn btn-sm btn-danger"
+                data-toggle="modal"
+                data-target="#confirmationModal"
+              >
+                <i class="fas fa-trash"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2 class="my-3">Todos:</h2>
+      <div class="list-group my-2">
+        <a href="#" class="list-group-item list-group-item-success">
+          Feel good about Bootstrap
+        </a>
+        <a href="#" class="list-group-item list-group-item-info">
+          Feel informed about Bootstrap
+        </a>
+        <a href="#" class="list-group-item list-group-item-warning">
+          Feel warned about Bootstrap
+        </a>
+        <a href="#" class="list-group-item list-group-item-warning">
+          Maybe I should read the docs...
+        </a>
+        <a href="#" class="list-group-item list-group-item-danger">
+          Danger zone
+        </a>
+        <a href="#" class="list-group-item list-group-item-danger">
+          I really should read the docs...
+        </a>
+      </div>
+      <!-- Pop-up Notification -->
+      <div
+        class="alert alert-success alert-dismissible fade show"
+        role="alert"
+        id="popupNotification"
+      >
+        Success! Item has been removed.
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="confirmationModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="confirmationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmationModalLabel">
+              Confirmation
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to remove this item?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+              onclick="showNotification()"
+            >
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showNotification() {
+        $("#popupNotification").alert();
+      }
+    </script>
+  </body>
+</html>
