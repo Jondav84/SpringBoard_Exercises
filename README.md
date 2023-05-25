@@ -1243,3 +1243,37 @@ Write the necessary HTML to make your page look just like this one:
 https://lessons.springboard.com/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F528d33ba-b017-47f3-b99f-1f945f0a2bf5%2FUntitled.png?id=a843284e-7e26-4dab-919a-3ff0051ab367&table=block&spaceId=163f1722-85e9-4a3c-adba-457a91094f00&width=2000&userId=&cache=v2
 
 _AnswerKey_: Bootstrap_step2.html
+
+## 29. How The Web Works:
+
+### **Part One: Solidify Terminology**
+
+In your own terms, define the following terms:
+
+- What is HTTP?
+- What is a URL?
+- What is DNS?
+- What is a query string?
+- What are two HTTP verbs and how are they different?
+- What is an HTTP request?
+- What is an HTTP response?
+- What is an HTTP header? Give a couple examples of request and response headers you have seen.
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+
+_AnswerKey_: howTheWebWorksExercise.txt
+
+### \***\*Part Two: Practice Tools\*\***
+
+1. Using **_curl_**, make a **_GET_** request to the *icanhazdadjoke.com* API to find all jokes involving the word “pirate”
+2. Use **_dig_** to find what the IP address is for *icanhazdadjoke.com*
+3. Make a simple web page and serve it using **_python3 -m http.server_**. Visit the page in a browser.
+
+### **Part Three: Explore Dev Tools**
+
+Build a very simple HTML form that uses the GET method (it can use the same page URL for the action) when the form is submitted.
+
+Add a field or two to the form and, after submitting it, explore in Chrome Developer tools how you can view the request and response headers.
+
+Edit the page to change the form type to POST, refresh in the browser and re-submit. Do you still see the field in the query string? Explore in Chrome how you can view the request and response headers, as well as the form data.
+
+_AnswerKey_: how_the_web_works/index.html

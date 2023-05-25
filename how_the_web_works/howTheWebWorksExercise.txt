@@ -1,0 +1,36 @@
+Part 1: Solidify Terminology
+
+1.  Hypertext Transfer Protocol. A stateless protocol(each request is independet of each other)
+    used for transmitting and receiving information over the internet.
+
+2.  Uniform Resource Locator. a specific address or location for a recource on the internet.
+
+3.  Domain Name System. it translates human readable domain names into IP addresses(like a phone book for the internet).
+
+4.  Uses kVal pairs to pass info in the URL request to the server to get more specific information. 
+    Added to the URL using the syntax ?key=value
+
+5.  Get: Fetchs a resource from the server. can be repated with no change to the server state.
+    used for retrieving web pages, images, and API reponses. can be cached as they do not modify data.
+
+    Post: Sends data to the server. changes data on the server.
+    used when submitting forms, uploading files,creating new resources on the server.
+
+6.  A message sent by the client to the server that follows the rule and format of the HTTP.
+
+7.  A response sent by the server to the client that follows the rule and format of the HTTP.
+
+8.  Provides additional info about the request or response.
+    Request headers: User-Agent, Accept-Language,
+    Response headers: Content-Type, Cache-control
+
+9.  URL Parsing: the web parses the URL to break it down into its different components.
+    DNS Lookup: browser checks its local DNS cache to see if it already has the IP address stored.
+        if(!DNS Cache) it send request to DNS resolver to obtain IP address.
+    Establishes a connection using a TCP(Transmission Control Protocol).
+    The client sends HTTP request.
+    The server processes the request.
+    The client then Receives the response from the server.
+    Renders the DOM based on the HTML and then applies any attached CSS or JS.
+    Closes the connection until another request is initiated.
+        By interaction with the client.
