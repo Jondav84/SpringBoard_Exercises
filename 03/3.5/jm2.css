@@ -1,0 +1,129 @@
+h3 {
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(37, 40, 88);
+    margin: 2%;
+}
+
+hr {
+    margin-top: 6%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-style: bold;
+    margin-left: 6%;
+    font-family: Creepster;
+    background-color: rgb(207, 0, 0);
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    cursor: crosshair;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: rgb(77, 74, 74);
+    color: rgb(252, 5, 5);
+    font-family: Creepster;
+}
+
+button:active {
+    transition: 0.5s;
+    transform: translateY(2px);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2),
+        0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.box {
+    height: 40%;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0.5em 0.5em 1em rgb(90, 89, 87);
+}
+
+.img#fi {
+    background-image: url("https://cdn.shopify.com/s/files/1/2342/8803/files/bts-diet001.jpg?v=1600638064");
+    background-position: center;
+    padding-bottom: 50%;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+}
+
+.quote {
+    font-size: 18px;
+    font-family: Creepster;
+    padding: 1%;
+    padding-left: 20%;
+    background-image: url("https://media.istockphoto.com/id/166319867/photo/scratched-ice-background.jpg?b=1&s=170667a&w=0&k=20&c=1cn1WwfJ6BIrHuyFy6YN3G3XkjyuVa92kaulDSVvQ4c=");
+    color: aliceblue;
+}
+
+.p {
+    font-size: 14px;
+    text-align: center;
+    padding: 10%;
+    background-color: rgb(20, 110, 110);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: aquamarine;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ebox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gbox {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    ;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.img#img1 {
+    background-image: url("https://media.giphy.com/media/dX8PxV3YrA87tVFFdQ/giphy.gif");
+}
+
+.img#img2 {
+    background-image: url("https://media.giphy.com/media/AgWPfz3MSzX2ZkRJHh/giphy.gif");
+}
+
+.img#img3 {
+    background-image: url("https://media.giphy.com/media/b297xRZXJp2Vi7XgT7/giphy.gif");
+}
+
+.caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 300px;
+    transition: top 0.9s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.gbox:hover .caption {
+    top: 0;
+}

@@ -1,0 +1,37 @@
+Boolean logic exercises
+
+Part 1:
+True				
+True
+1
+True
+False
+True
+True
+
+Part 2:
+A:
+“Keep it Up”
+
+By not entering in the comparison operator the expression will automatically check to see if the value is “truthy” or “falsy”. 
+B:
+“Third”, it will be the first expression to be evaluated true
+Undefined
+No, undefined is inherently a falsy value.
+No, it is an empty string which has an inherently falsy value.
+Yes, by having a defined value it is inherently truthy.
+
+Part 3:
+If (Math.random() > 0.5) {
+	    console.log(“Over 0.5”)
+	}  else {
+	    console.log(“Under 0.5”);
+
+
+false
+0
+“” (empty string)
+null
+undefined
+NaN
+
